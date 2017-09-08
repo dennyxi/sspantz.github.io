@@ -16,13 +16,15 @@ title: Categories
     <article class="archive-item">
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
       
-      {% assign post_month_year = site.categories[category_name][post].date | date: "%B %Y" %}
-      {% assign newer_post_month_year = site.categories[category_name][post].next.date | date: "%B %Y" %}
+      {% assign post_month_year = post.date | date: "%B %Y" %}
+      {% assign newer_post_month_year = post.next.date | date: "%B %Y" %}
       {% if post_month_year != newer_post_month_year %}
-      <h3 class="section-header-archive">
-      {{ post_month_year }}
-        
-    </h3>
+        <h3 class="section-header-archive">
+        {{ post_month_year }}
+      </h3>
+      {% endif %}
+    
+     </h3>
     </article>
     {% endfor %}
   </div>
