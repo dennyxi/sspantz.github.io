@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ransforming Code into Beautiful, Idiomatic Python"
+title:  "Transforming Code into Beautiful, Idiomatic Python"
 date:   2017-09-08 16:24:32 +0800
 categories: Tech
 ---
